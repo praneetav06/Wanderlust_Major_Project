@@ -1,0 +1,132 @@
+#filters {
+  display: flex;
+  height: 130px;
+}
+.filters {
+  display: flex;
+  height: 120px;
+  width: 750px;
+}
+.filters .scroll-nav {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.filters .filter {
+  text-align: center;
+  opacity: 0.7;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  user-select: none;
+  margin: 1.5rem;
+}
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.filters .icon {
+  top: 0;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon:first-child {
+  left: 0;
+  justify-content: flex-start;
+  display: none;
+  background: linear-gradient(90deg, white 70%, transparent);
+}
+.icon:last-child {
+  right: 0;
+  justify-content: flex-end;
+  background: linear-gradient(-90deg, white 70%, transparent);
+}
+.icon i {
+  height: 55px;
+  width: 55px;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.tax-info {
+  display: none;
+}
+.tax-toggle {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: auto;
+  padding: 1rem;
+  margin: 1rem;
+  margin-top: 20px;
+}
+@media (max-width: 770px) and (min-width: 240px) {
+  #filters {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+  }
+  .filters {
+    width: 350px;
+  }
+  .scroll-nav {
+    font-size: 0.8rem;
+    width: 300px;
+  }
+  .tax-toggle {
+    height: 40px;
+    width: auto;
+    border-radius: 20px;
+    padding: 40px;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 999px) and (min-width: 770px) {
+  #filters {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .scroll-nav {
+    width: 450px;
+    font-size: 0.8rem;
+  }
+  .tax-toggle {
+    height: 50px;
+    width: auto;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 2700px) and (min-width: 1400px) {
+  .filters {
+    width: 930px;
+  }
+  .tax-toggle {
+    width: auto;
+  }
+}
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .filters {
+    width: 850px;
+  }
+  .tax-toggle {
+    width: auto;
+  }
+}
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .filters {
+    width: 650px;
+  }
+  .tax-toggle {
+    width: auto;
+  }
+}

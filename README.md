@@ -40,7 +40,7 @@ View: Frontend templates styled with Bootstrap.
 Controller: Handles the application logic and interaction with the database.
 
 🌐 Live Demo
-The project is live on Render. Check it out here: https://wanderlust-major-project-z69z.onrender.com
+The project is live on Render. Check it out here: https://wanderlust-major-project-z69z.onrender.com/listings
 
 💡 Key Highlights
 Cloud Storage:

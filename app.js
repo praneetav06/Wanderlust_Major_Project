@@ -113,13 +113,13 @@ app.use("/", userRouter);
 //     res.send("successful testing");
 //   });
 
-// app.all("*", (req, res, next) => {
-//   next(new ExpressError(404, "Page not found"));
-// });
-
-app.all("/*", (req, res) => {
-  res.redirect("/listings");
+app.all("*", (req, res, next) => {
+  next(new ExpressError(404, "Page not found"));
 });
+
+// app.all("/*", (req, res) => {
+//   res.redirect("/listings");
+// });
 
 app.use((err, req, res, next) => {
   let { statusCode = 500, message = "Something went wrong!" } = err;

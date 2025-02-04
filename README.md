@@ -46,5 +46,5 @@ Wanderlust is a full-stack web application inspired by Airbnb, allowing users to
 - **Cloud Storage:** Cloudinary, Multer
 - **Mapping API:** Mapbox
 
-###Deployment 
+### Deployment 
 - The website is deployed on render at "https://wanderlust-major-project-z69z.onrender.com/listings" 
